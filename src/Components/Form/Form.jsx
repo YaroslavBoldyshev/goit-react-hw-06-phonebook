@@ -20,7 +20,6 @@ const Form = () => {
       Notify.failure(`${name} is already in contacts`);
       return;
     }
-    console.log(name, number);
     dispatch(addContact(name, number));
     setName('');
     setNumber('');
